@@ -4,12 +4,14 @@ from rest_framework.generics import ListAPIView
 from .serializer import ProductSerializer
 from rest_framework.generics import CreateAPIView
 from rest_framework.generics import RetrieveUpdateDestroyAPIView
+from rest_framework.generics import ListCreateAPIView
 
 
 
-class ProductListView(ListAPIView):
+class ProductListView(ListCreateAPIView):
     """
-    ProductListView stellt eine API-Ansicht bereit, die eine Liste aller Produkte zurückgibt.
+    ProductListView stellt eine API-Ansicht bereit, die eine Liste aller Produkte zurückgibt
+    und das Erstellen neuer Produkte ermöglicht.
 
     Die zurückgegebenen Produktdaten enthalten folgende Felder:
         - name: Name des Produkts
