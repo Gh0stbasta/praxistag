@@ -29,6 +29,12 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
+ALLOWED_HOSTS = [
+    'ec2-54-93-63-44.eu-central-1.compute.amazonaws.com',
+    'localhost',
+    '127.0.0.1',
+]
+
 # Application definition
 
 INSTALLED_APPS = [
